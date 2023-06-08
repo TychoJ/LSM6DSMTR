@@ -51,6 +51,10 @@
 // Data ready config register
 #define DRDY_PULSE_CFG 0x0B
 
+// INT 1/2 controll registers
+#define INT1_CTRL 0x0D
+#define INT2_CTRL 0x0E
+
 #define CTRL1_XL 0x10
 #define CTRL2_G  0x11
 #define CTRL3_C  0x12
