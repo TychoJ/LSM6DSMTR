@@ -128,6 +128,10 @@
 #define WAKE_UP_DUR 0x5C
 #define FREE_FALL 0x5D
 
+// Route int 1 and 2 register
+#define MD1_CFG 0x5E
+#define MD2_CFG 0x5F
+
 uint8_t whoAmI(LSM6DSMTR_t device) {
     uint8_t ret;
     uint8_t value;
