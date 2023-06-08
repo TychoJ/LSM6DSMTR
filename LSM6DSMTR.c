@@ -35,6 +35,10 @@
 // Enable embedded functions register
 #define FUNC_CFG_ACCESS 0x01
 
+// Sensor sync time frame register
+#define SENSOR_SYNC_TIME_FRAME 0x02
+
+
 
 #define CTRL1_XL 0x10
 #define CTRL2_G  0x11
