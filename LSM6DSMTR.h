@@ -33,4 +33,20 @@
 
 #include <stdint.h>
 
+int16_t accelGetX(void);
+int16_t accelGetY(void);
+int16_t accelGetZ(void);
+
+int16_t gyroGetX(void);
+int16_t gyroGetY(void);
+int16_t gyroGetZ(void);
+
+int16_t enableAccelX(void);
+int16_t enableAccelY(void);
+int16_t enableAccelZ(void);
+
+int16_t enableGyroX(void);
+int16_t enableGyroY(void);
+int16_t enableGyroZ(void);
+
 #endif //LSM6DSMTR_H
