@@ -43,6 +43,7 @@
 #define CTRL9_XL 0x18
 #define CTRL10_C 0x19
 
+#define MASTER_CONFIG 0x1A
 
 #define OUT_TEMP_L      0x20
 #define OUT_TEMP_H      0x21
