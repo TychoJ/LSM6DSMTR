@@ -29,6 +29,12 @@
 
 #include "LSM6DSMTR.h"
 
+
+
+/*
+ * Register addres defines
+ */
+
 #define WHO_AM_I_REG 0x0F
 #define WHO_AM_I 0x6A
 
@@ -174,6 +180,10 @@
 #define X_OFS_USR 0x73
 #define Y_OFS_USR 0x74
 #define Z_OFS_USR 0x75
+
+/*
+ * Bit precision of settings in register defines
+ */
 
 uint8_t whoAmI(LSM6DSMTR_t device) {
     uint8_t ret;
