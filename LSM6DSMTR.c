@@ -122,34 +122,34 @@
 #define TAP_CFG 0x58
 
 // Register to set sensitivity of embedded functions
-#define TAP_THS_6D 0x59
-#define INT_DUR2 0x5A
+#define TAP_THS_6D  0x59
+#define INT_DUR2    0x5A
 #define WAKE_UP_THS 0x5B
 #define WAKE_UP_DUR 0x5C
-#define FREE_FALL 0x5D
+#define FREE_FALL   0x5D
 
 // Route int 1 and 2 register
 #define MD1_CFG 0x5E
 #define MD2_CFG 0x5F
 
 // Registers for stuff
-#define MASTER_CMD_CODE 0x60
+#define MASTER_CMD_CODE          0x60
 #define SENS_SYNC_SPI_ERROR_CODE 0x61
-#define OUT_MAG_RAW_X_L 0x66
-#define OUT_MAG_RAW_X_H 0x67
-#define OUT_MAG_RAW_Y_L 0x68
-#define OUT_MAG_RAW_Y_H 0x69
-#define OUT_MAG_RAW_Z_L 0x6A
-#define OUT_MAG_RAW_Z_H 0x6B
-#define INT_OIS 0x6F
-#define CTRL1_OIS 0x70
-#define CTRL2_OIS 0x71
-#define CTRL3_OIS 0x72
+#define OUT_MAG_RAW_X_L          0x66
+#define OUT_MAG_RAW_X_H          0x67
+#define OUT_MAG_RAW_Y_L          0x68
+#define OUT_MAG_RAW_Y_H          0x69
+#define OUT_MAG_RAW_Z_L          0x6A
+#define OUT_MAG_RAW_Z_H          0x6B
+#define INT_OIS                  0x6F
+#define CTRL1_OIS                0x70
+#define CTRL2_OIS                0x71
+#define CTRL3_OIS                0x72
 
 // User settable accel offset registers
-X_OFS_USR 0x73
-Y_OFS_USR 0x74
-Z_OFS_USR 0x75
+#define X_OFS_USR 0x73
+#define Y_OFS_USR 0x74
+#define Z_OFS_USR 0x75
 
 uint8_t whoAmI(LSM6DSMTR_t device) {
     uint8_t ret;
