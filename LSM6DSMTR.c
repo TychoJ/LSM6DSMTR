@@ -49,6 +49,9 @@
 #define TAP_SRC       0x1C
 #define D6D_SRC       0x1D
 
+#define STATUS_REG    0x1E
+#define STATUS_SPIAux 0x1E
+
 #define OUT_TEMP_L      0x20
 #define OUT_TEMP_H      0x21
 #define OUTX_L_G        0x22
