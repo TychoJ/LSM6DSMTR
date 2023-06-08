@@ -32,6 +32,13 @@
 #define LSM6DSMTR_H
 
 #include <stdint.h>
+#include <avr/io.h>
+
+typedef struct {
+    TWI_t *twi;
+    uint8_t addr;
+}LSM6DSMTR_t;
+
 
 int16_t accelGetX(void);
 int16_t accelGetY(void);
