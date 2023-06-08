@@ -205,6 +205,12 @@
 #define DEC_FIFO_GYRO_bp 3
 #define DEC_FIFO_XL_bp   0
 
+// FIFO_CTRL4
+#define STOP_ON_FTH_bp      7
+#define ONLY_HIGH_DATA_bp   6
+#define DEC_DS4_FIFO_bp     3
+#define DEC_DS3_FIFO_bp     0
+
 uint8_t whoAmI(LSM6DSMTR_t device) {
     uint8_t ret;
     uint8_t value;
