@@ -36,10 +36,10 @@
 #define FUNC_CFG_ACCESS 0x01
 
 // Sensor sync time frame register
-#define SENSOR_SYNC_TIME_FRAME 0x02
+#define SENSOR_SYNC_TIME_FRAME 0x04
 
 // Sensor sync resolution ratio
-#define SENSOR_SYNC_RES_RATIO 0x03
+#define SENSOR_SYNC_RES_RATIO 0x05
 
 
 
