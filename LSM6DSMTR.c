@@ -45,6 +45,10 @@
 
 #define MASTER_CONFIG 0x1A
 
+#define WAKE_UP_SRC   0x1B
+#define TAP_SRC       0x1C
+#define D6D_SRC       0x1D
+
 #define OUT_TEMP_L      0x20
 #define OUT_TEMP_H      0x21
 #define OUTX_L_G        0x22
