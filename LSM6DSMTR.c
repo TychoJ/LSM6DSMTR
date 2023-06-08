@@ -185,6 +185,10 @@
  * Bit precision of settings in register defines
  */
 
+// FUNC_CFG_ACCESS
+#define FUNC_CFG_EN_bp   7
+#define FUNC_CFG_EN_B_bp 5
+
 uint8_t whoAmI(LSM6DSMTR_t device) {
     uint8_t ret;
     uint8_t value;
