@@ -39,6 +39,9 @@ typedef struct {
     uint8_t addr;
 }LSM6DSMTR_t;
 
+// Who am I test
+uint8_t whoAmI(void);
+
 // Get accelerometer data
 int16_t accelGetX(LSM6DSMTR_t device);
 int16_t accelGetY(LSM6DSMTR_t device);
