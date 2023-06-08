@@ -41,8 +41,6 @@ typedef struct {
     uint8_t (*readFromRegister)(TWI_t *twi, uint8_t addr, uint8_t *data, uint8_t reg);
 }LSM6DSMTR_t;
 
-#define WHO_AM_I 0x6A
-
 // Who am I test
 // Returns 1 when the LSM6DSMTR cannot be read properly
 // Returns 0 when teh LSM6DSMTR can be read properly

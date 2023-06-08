@@ -30,6 +30,7 @@
 #include "LSM6DSMTR.h"
 
 #define WHO_AM_I_REG 0x0F
+#define WHO_AM_I 0x6A
 
 #define CTRL1_XL 0x10
 #define CTRL2_G  0x11
