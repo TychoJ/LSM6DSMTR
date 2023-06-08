@@ -90,6 +90,11 @@
 #define FIFO_DATA_OUT_L 0x3E
 #define FIFO_DATA_OUT_H 0x3F
 
+// Time stamp registers
+#define TIMESTAMP0_REG 0x40
+#define TIMESTAMP1_REG 0x41
+#define TIMESTAMP2_REG 0x42
+
 
 uint8_t whoAmI(LSM6DSMTR_t device) {
     uint8_t ret;
