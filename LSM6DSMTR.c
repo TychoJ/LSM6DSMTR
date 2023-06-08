@@ -26,3 +26,20 @@
  *  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  *  SOFTWARE.
  */
+
+#include "LSM6DSMTR.h"
+#include "../Xmega-TWI/twi.h"
+
+#define WHO_AM_I_REG 0x0F
+
+uint8_t whoAmI(LSM6DSMTR_t device) {
+    uint8_t ret;
+    uint8_t value;
+
+    ret = read_8bit_register_TWI(device.twi, device.addr, &value, WHO_AM_I_REG)
+
+    if (value == WHO_AM_I && ret == 5) ret = 0;
+    else ret = 1;
+
+    return ret;
+}

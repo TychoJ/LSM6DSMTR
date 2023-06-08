@@ -39,8 +39,12 @@ typedef struct {
     uint8_t addr;
 }LSM6DSMTR_t;
 
+#define WHO_AM_I 0x6A
+
 // Who am I test
-uint8_t whoAmI(void);
+// Returns 1 when the LSM6DSMTR cannot be read properly
+// Returns 0 when teh LSM6DSMTR can be read properly
+uint8_t whoAmI(LSM6DSMTR_t device);
 
 // Get accelerometer data
 int16_t accelGetX(LSM6DSMTR_t device);
