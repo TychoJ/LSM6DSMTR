@@ -32,6 +32,18 @@
 
 #define WHO_AM_I_REG 0x0F
 
+#define CTRL1_XL 0x10
+#define CTRL2_G  0x11
+#define CTRL3_C  0x12
+#define CTRL4_C  0x13
+#define CTRL5_C  0x14
+#define CTRL6_C  0x15
+#define CTRL7_G  0x16
+#define CTRL8_XL 0x17
+#define CTRL9_XL 0x18
+#define CTRL10_C 0x19
+
+
 #define OUT_TEMP_L      0x20
 #define OUT_TEMP_H      0x21
 #define OUTX_L_G        0x22
