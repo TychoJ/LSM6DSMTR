@@ -195,6 +195,12 @@
 // SENSOR_SYNC_RES_RATIO
 #define SEN_SYNC_RES_RATIO_bp 0
 
+// FIFO_CTRL2
+#define TIMER_PEDO_FIFO_EN_bp   7
+#define TIMER_PEDO_FIFO_DRDY_bp 6
+#define FIFO_TEMP_EN_bp         3
+#define FTH_bp                  0
+
 uint8_t whoAmI(LSM6DSMTR_t device) {
     uint8_t ret;
     uint8_t value;
