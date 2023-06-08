@@ -47,6 +47,21 @@
 #define OUTZ_L_XL       0x2C
 #define OUTZ_H_XL       0x2D
 
+// Sensor hub defines
+#define SENSORHUB1_REG  0x2E
+#define SENSORHUB2_REG  0x2F
+#define SENSORHUB3_REG  0x30
+#define SENSORHUB4_REG  0x31
+#define SENSORHUB5_REG  0x32
+#define SENSORHUB6_REG  0x33
+#define SENSORHUB7_REG  0x34
+#define SENSORHUB8_REG  0x35
+#define SENSORHUB9_REG  0x36
+#define SENSORHUB10_REG 0x37
+#define SENSORHUB11_REG 0x38
+#define SENSORHUB12_REG 0x39
+
+
 
 
 uint8_t whoAmI(LSM6DSMTR_t device) {
