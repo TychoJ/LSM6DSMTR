@@ -26,3 +26,11 @@
  *  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  *  SOFTWARE.
  */
+
+
+#ifndef LSM6DSMTR_H
+#define LSM6DSMTR_H
+
+#include <stdint.h>
+
+#endif //LSM6DSMTR_H
