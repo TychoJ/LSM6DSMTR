@@ -32,6 +32,10 @@
 #define WHO_AM_I_REG 0x0F
 #define WHO_AM_I 0x6A
 
+// Enable embedded functions register
+#define FUNC_CFG_ACCESS 0x01
+
+
 #define CTRL1_XL 0x10
 #define CTRL2_G  0x11
 #define CTRL3_C  0x12
