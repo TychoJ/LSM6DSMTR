@@ -215,6 +215,10 @@
 #define ODR_FIFO_bp     3
 #define FIFO_MODE_bp    0
 
+// DRDY_PULSE_CFG
+#define DRDY_PULSED_bp      7
+#define INT2_WRIST_TILT_bp  0
+
 uint8_t whoAmI(LSM6DSMTR_t device) {
     uint8_t ret;
     uint8_t value;
