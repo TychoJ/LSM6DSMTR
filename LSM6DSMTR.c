@@ -99,6 +99,9 @@
 #define STEP_TIMESTAMP_L 0x49
 #define STEP_TIMESTAMP_H 0x4A
 
+// Step counter registers
+#define STEP_COUNTER_L 0x4B
+#define STEP_COUNTER_H 0x4C
 
 uint8_t whoAmI(LSM6DSMTR_t device) {
     uint8_t ret;
