@@ -80,7 +80,11 @@
 #define SENSORHUB11_REG 0x38
 #define SENSORHUB12_REG 0x39
 
-
+// Fifo status registers
+#define FIFO_STATUS1 0x3A
+#define FIFO_STATUS2 0x3B
+#define FIFO_STATUS3 0x3C
+#define FIFO_STATUS4 0x3D
 
 
 uint8_t whoAmI(LSM6DSMTR_t device) {
