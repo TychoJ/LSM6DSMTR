@@ -48,6 +48,8 @@
 #define FIFO_CTRL4 0x09
 #define FIFO_CTRL5 0x0A
 
+// Data ready config register
+#define DRDY_PULSE_CFG 0x0B
 
 #define CTRL1_XL 0x10
 #define CTRL2_G  0x11
