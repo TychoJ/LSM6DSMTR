@@ -146,7 +146,10 @@
 #define CTRL2_OIS 0x71
 #define CTRL3_OIS 0x72
 
-
+// User settable accel offset registers
+X_OFS_USR 0x73
+Y_OFS_USR 0x74
+Z_OFS_USR 0x75
 
 uint8_t whoAmI(LSM6DSMTR_t device) {
     uint8_t ret;
