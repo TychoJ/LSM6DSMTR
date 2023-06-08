@@ -39,19 +39,22 @@ typedef struct {
     uint8_t addr;
 }LSM6DSMTR_t;
 
-
+// Get accelerometer data
 int16_t accelGetX(LSM6DSMTR_t device);
 int16_t accelGetY(LSM6DSMTR_t device);
 int16_t accelGetZ(LSM6DSMTR_t device);
 
+// Get gyroscope data
 int16_t gyroGetX(LSM6DSMTR_t device);
 int16_t gyroGetY(LSM6DSMTR_t device);
 int16_t gyroGetZ(LSM6DSMTR_t device);
 
+// Enable accelerometer axis
 int16_t enableAccelX(LSM6DSMTR_t device);
 int16_t enableAccelY(LSM6DSMTR_t device);
 int16_t enableAccelZ(LSM6DSMTR_t device);
 
+// Enable gyroscope axis
 int16_t enableGyroX(LSM6DSMTR_t device);
 int16_t enableGyroY(LSM6DSMTR_t device);
 int16_t enableGyroZ(LSM6DSMTR_t device);
