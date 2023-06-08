@@ -219,6 +219,16 @@
 #define DRDY_PULSED_bp      7
 #define INT2_WRIST_TILT_bp  0
 
+// INT1_CTRL
+#define INT1_ STEP_DETECTOR_bp  7
+#define INT1_SIGN_MOT_bp        6
+#define INT1_FULL_FLAG_bp       5
+#define INT1_FIFO_OVR_bp        4
+#define INT1_FTH_bp             3
+#define INT1_ BOOT_bp           2
+#define INT1_DRDY_G_bp          1
+#define INT1_DRDY_XL            0
+
 uint8_t whoAmI(LSM6DSMTR_t device) {
     uint8_t ret;
     uint8_t value;
