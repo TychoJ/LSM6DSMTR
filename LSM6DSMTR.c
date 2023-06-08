@@ -118,6 +118,11 @@
 // Wrist tilt event detection register
 #define WRIST_TILT_IA 0x55
 
+// Enable interupts
+#define TAP_CFG 0x58
+
+// Register to set tilt 
+#define TAP_THS_6D 0x59
 
 uint8_t whoAmI(LSM6DSMTR_t device) {
     uint8_t ret;
