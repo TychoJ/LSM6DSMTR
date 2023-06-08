@@ -121,8 +121,12 @@
 // Enable interupts
 #define TAP_CFG 0x58
 
-// Register to set tilt 
+// Register to set sensitivity of embedded functions
 #define TAP_THS_6D 0x59
+#define INT_DUR2 0x5A
+#define WAKE_UP_THS 0x5B
+#define WAKE_UP_DUR 0x5C
+#define FREE_FALL 0x5D
 
 uint8_t whoAmI(LSM6DSMTR_t device) {
     uint8_t ret;
