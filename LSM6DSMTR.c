@@ -86,6 +86,10 @@
 #define FIFO_STATUS3 0x3C
 #define FIFO_STATUS4 0x3D
 
+// FIFO data out registers
+#define FIFO_DATA_OUT_L 0x3E
+#define FIFO_DATA_OUT_H 0x3F
+
 
 uint8_t whoAmI(LSM6DSMTR_t device) {
     uint8_t ret;
