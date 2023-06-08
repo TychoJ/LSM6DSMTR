@@ -132,6 +132,22 @@
 #define MD1_CFG 0x5E
 #define MD2_CFG 0x5F
 
+// Registers for stuff
+#define MASTER_CMD_CODE 0x60
+#define SENS_SYNC_SPI_ERROR_CODE 0x61
+#define OUT_MAG_RAW_X_L 0x66
+#define OUT_MAG_RAW_X_H 0x67
+#define OUT_MAG_RAW_Y_L 0x68
+#define OUT_MAG_RAW_Y_H 0x69
+#define OUT_MAG_RAW_Z_L 0x6A
+#define OUT_MAG_RAW_Z_H 0x6B
+#define INT_OIS 0x6F
+#define CTRL1_OIS 0x70
+#define CTRL2_OIS 0x71
+#define CTRL3_OIS 0x72
+
+
+
 uint8_t whoAmI(LSM6DSMTR_t device) {
     uint8_t ret;
     uint8_t value;
