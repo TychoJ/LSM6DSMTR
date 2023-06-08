@@ -111,6 +111,10 @@
 #define SENSORHUB17_REG 0x51
 #define SENSORHUB18_REG 0x52
 
+// Significant (motion) interupt registers
+#define FUNC_SRC1 0x53
+#define FUNC_SRC2 0x54
+
 uint8_t whoAmI(LSM6DSMTR_t device) {
     uint8_t ret;
     uint8_t value;
