@@ -41,6 +41,12 @@
 // Sensor sync resolution ratio
 #define SENSOR_SYNC_RES_RATIO 0x05
 
+// FiFo control registers
+#define FIFO_CTRL1 0x06
+#define FIFO_CTRL2 0x07
+#define FIFO_CTRL3 0x08
+#define FIFO_CTRL4 0x09
+#define FIFO_CTRL5 0x0A
 
 
 #define CTRL1_XL 0x10
