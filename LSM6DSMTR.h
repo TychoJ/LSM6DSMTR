@@ -37,6 +37,8 @@
 typedef struct {
     TWI_t *twi;
     uint8_t addr;
+    uint8_t (*writeToRegister)(TWI_t *twi, uint8_t addr, uint8_t data, uint8_t reg);
+    uint8_t (*readFromRegister)(TWI_t *twi, uint8_t addr, uint8_t *data, uint8_t reg);
 }LSM6DSMTR_t;
 
 #define WHO_AM_I 0x6A
