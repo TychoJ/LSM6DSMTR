@@ -192,6 +192,9 @@
 // SENSOR_SYNC_TIME_FRAME
 #define SEN_SYNC_TIME_FRAME_bp 0
 
+// SENSOR_SYNC_RES_RATIO
+#define SEN_SYNC_RES_RATIO_bp 0
+
 uint8_t whoAmI(LSM6DSMTR_t device) {
     uint8_t ret;
     uint8_t value;
