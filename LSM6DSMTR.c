@@ -211,6 +211,10 @@
 #define DEC_DS4_FIFO_bp     3
 #define DEC_DS3_FIFO_bp     0
 
+// FIFO_CTRL5
+#define ODR_FIFO_bp     3
+#define FIFO_MODE_bp    0
+
 uint8_t whoAmI(LSM6DSMTR_t device) {
     uint8_t ret;
     uint8_t value;
