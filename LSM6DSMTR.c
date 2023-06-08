@@ -95,6 +95,10 @@
 #define TIMESTAMP1_REG 0x41
 #define TIMESTAMP2_REG 0x42
 
+// Step Time stamp registers
+#define STEP_TIMESTAMP_L 0x49
+#define STEP_TIMESTAMP_H 0x4A
+
 
 uint8_t whoAmI(LSM6DSMTR_t device) {
     uint8_t ret;
