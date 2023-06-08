@@ -103,6 +103,14 @@
 #define STEP_COUNTER_L 0x4B
 #define STEP_COUNTER_H 0x4C
 
+// Sensor hub registers 13 - 18
+#define SENSORHUB13_REG 0x4D
+#define SENSORHUB14_REG 0x4E
+#define SENSORHUB15_REG 0x4F
+#define SENSORHUB16_REG 0x50
+#define SENSORHUB17_REG 0x51
+#define SENSORHUB18_REG 0x52
+
 uint8_t whoAmI(LSM6DSMTR_t device) {
     uint8_t ret;
     uint8_t value;
