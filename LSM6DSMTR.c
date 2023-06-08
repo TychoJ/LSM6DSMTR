@@ -229,6 +229,16 @@
 #define INT1_DRDY_G_bp          1
 #define INT1_DRDY_XL            0
 
+// INT2_CTRL
+#define INT2_STEP_DELTA_bp      7
+#define INT2_STEP_COUNT_OV_bp   6
+#define INT2_ FULL_FLAG_bp      5
+#define INT2_FIFO_OVR_bp        4
+#define INT2_FTH_bp             3
+#define INT2_DRDY_TEMP_bp       2
+#define INT2_DRDY_G_bp          1
+#define INT2_DRDY_XL            0
+
 uint8_t whoAmI(LSM6DSMTR_t device) {
     uint8_t ret;
     uint8_t value;
