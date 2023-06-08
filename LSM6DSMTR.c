@@ -115,6 +115,10 @@
 #define FUNC_SRC1 0x53
 #define FUNC_SRC2 0x54
 
+// Wrist tilt event detection register
+#define WRIST_TILT_IA 0x55
+
+
 uint8_t whoAmI(LSM6DSMTR_t device) {
     uint8_t ret;
     uint8_t value;
