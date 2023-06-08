@@ -40,20 +40,20 @@ typedef struct {
 }LSM6DSMTR_t;
 
 
-int16_t accelGetX(void);
-int16_t accelGetY(void);
-int16_t accelGetZ(void);
+int16_t accelGetX(LSM6DSMTR_t device);
+int16_t accelGetY(LSM6DSMTR_t device);
+int16_t accelGetZ(LSM6DSMTR_t device);
 
-int16_t gyroGetX(void);
-int16_t gyroGetY(void);
-int16_t gyroGetZ(void);
+int16_t gyroGetX(LSM6DSMTR_t device);
+int16_t gyroGetY(LSM6DSMTR_t device);
+int16_t gyroGetZ(LSM6DSMTR_t device);
 
-int16_t enableAccelX(void);
-int16_t enableAccelY(void);
-int16_t enableAccelZ(void);
+int16_t enableAccelX(LSM6DSMTR_t device);
+int16_t enableAccelY(LSM6DSMTR_t device);
+int16_t enableAccelZ(LSM6DSMTR_t device);
 
-int16_t enableGyroX(void);
-int16_t enableGyroY(void);
-int16_t enableGyroZ(void);
+int16_t enableGyroX(LSM6DSMTR_t device);
+int16_t enableGyroY(LSM6DSMTR_t device);
+int16_t enableGyroZ(LSM6DSMTR_t device);
 
 #endif //LSM6DSMTR_H
