@@ -297,6 +297,13 @@
 #define HP_SLOPE_XL_EN_bp   2
 #define LOW_PASS_ON_6D      0
 
+// CTRL9_XL
+#define DEN_X_bp    7
+#define DEN_Y_bp    6
+#define DEN_Z_bp    5
+#define DEN_XL_G_bp 4
+#define SOFT_EN_bp  2
+
 uint8_t whoAmI(LSM6DSMTR_t device) {
     uint8_t ret;
     uint8_t value;
