@@ -289,6 +289,14 @@
 #define HPM_G_bp        4
 #define ROUNDING_STATUS 2
 
+// CTRL8_XL
+#define LPF2_XL_EN_bp       7
+#define HPCF_XL_bp          5
+#define HP_REF_MODE_bp      4
+#define INPUT_COMPOSITE_bp  3
+#define HP_SLOPE_XL_EN_bp   2
+#define LOW_PASS_ON_6D      0
+
 uint8_t whoAmI(LSM6DSMTR_t device) {
     uint8_t ret;
     uint8_t value;
