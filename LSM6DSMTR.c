@@ -260,6 +260,16 @@
 #define BLE_bp          1
 #define SW_RESET_bp     0
 
+// CTRL4_C
+#define DEN_XL_EN_bp        7
+#define SLEEP_G_bp          6
+#define INT2_on_INT1_bp     5
+#define DEN_DRDY_INT1_bp    4
+#define DRDY_MASK_bp        3
+#define I2C_disable_bp      2
+#define LPF1_SEL_G_bp       1
+
+
 uint8_t whoAmI(LSM6DSMTR_t device) {
     uint8_t ret;
     uint8_t value;
