@@ -313,6 +313,15 @@
 #define PEDO_RST_STEP_bp    1
 #define SIGN_MOTION_EN_bp   0
 
+// MASTER_CONFIG
+DRDY_ON_INT1_bp         7
+DATA_VALID_SEL_FIFO_bp  6
+START_CONFIG_bp         4
+PULL_UP_EN_bp           3
+PASS_THROUGH_MODE_bp    2
+IRON_EN_bp              1
+MASTER_ON_bp            0
+
 uint8_t whoAmI(LSM6DSMTR_t device) {
     uint8_t ret;
     uint8_t value;
