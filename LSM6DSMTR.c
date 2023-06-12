@@ -1,23 +1,23 @@
 /*  LSM6DSMTR
  *  ^^^^^^^^^
  *  Author  	: TychoJ
- * 
- *  File		: LSM6DSMTR.c
- *  Contains	: The configurations for make.avr.mk * 
+ *
+ *  File	: LSM6DSMTR.c
+ *  Contains	: The configurations for make.avr.mk *
  *  MIT License
- * 
+ *
  *  Copyright (c) 20223 TychoJ
- * 
+ *
  *  Permission is hereby granted, free of charge, to any person obtaining a copy
  *  of this software and associated documentation files (the "Software"), to deal
  *  in the Software without restriction, including without limitation the rights
  *  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
  *  copies of the Software, and to permit persons to whom the Software is
  *  furnished to do so, subject to the following conditions:
- * 
+ *
  *  The above copyright notice and this permission notice shall be included in all
  *  copies or substantial portions of the Software.
- * 
+ *
  *  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  *  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
  *  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
@@ -35,8 +35,8 @@
  * Register addres defines
  */
 
-#define WHO_AM_I_REG 0x0F
-#define WHO_AM_I 0x6A
+#define WHO_AM_I_REG 	0x0F
+#define WHO_AM_I	0x6A
 
 // Enable embedded functions register
 #define FUNC_CFG_ACCESS 0x01
@@ -45,7 +45,7 @@
 #define SENSOR_SYNC_TIME_FRAME 0x04
 
 // Sensor sync resolution ratio
-#define SENSOR_SYNC_RES_RATIO 0x05
+#define SENSOR_SYNC_RES_RATIO  0x05
 
 // FiFo control registers
 #define FIFO_CTRL1 0x06
@@ -220,24 +220,24 @@
 #define INT2_WRIST_TILT_bp  0
 
 // INT1_CTRL
-#define INT1_ STEP_DETECTOR_bp  7
+#define INT1_STEP_DETECTOR_bp   7
 #define INT1_SIGN_MOT_bp        6
 #define INT1_FULL_FLAG_bp       5
 #define INT1_FIFO_OVR_bp        4
 #define INT1_FTH_bp             3
-#define INT1_ BOOT_bp           2
+#define INT1_BOOT_bp            2
 #define INT1_DRDY_G_bp          1
-#define INT1_DRDY_XL            0
+#define INT1_DRDY_XL_bp         0
 
 // INT2_CTRL
 #define INT2_STEP_DELTA_bp      7
 #define INT2_STEP_COUNT_OV_bp   6
-#define INT2_ FULL_FLAG_bp      5
+#define INT2_FULL_FLAG_bp       5
 #define INT2_FIFO_OVR_bp        4
 #define INT2_FTH_bp             3
 #define INT2_DRDY_TEMP_bp       2
 #define INT2_DRDY_G_bp          1
-#define INT2_DRDY_XL            0
+#define INT2_DRDY_XL_bp         0
 
 // CTRL1_XL
 #define ODR_XL_bp       4
@@ -284,10 +284,10 @@
 #define FTYPE_bp        0
 
 // CTRL7_G
-#define G_HM_MODE_bp    7
-#define HP_EN_G_bp      6
-#define HPM_G_bp        4
-#define ROUNDING_STATUS 2
+#define G_HM_MODE_bp    	7
+#define HP_EN_G_bp      	6
+#define HPM_G_bp        	4
+#define ROUNDING_STATUS_bp 	2
 
 // CTRL8_XL
 #define LPF2_XL_EN_bp       7
@@ -295,7 +295,7 @@
 #define HP_REF_MODE_bp      4
 #define INPUT_COMPOSITE_bp  3
 #define HP_SLOPE_XL_EN_bp   2
-#define LOW_PASS_ON_6D      0
+#define LOW_PASS_ON_6D_bp   0
 
 // CTRL9_XL
 #define DEN_X_bp    7
