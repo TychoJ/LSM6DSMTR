@@ -239,6 +239,121 @@
 #define INT2_DRDY_G_bp          1
 #define INT2_DRDY_XL            0
 
+// CTRL1_XL
+#define ODR_XL_bp       4
+#define FS_XL_bp        2
+#define LPF1_BW_SEL_bp  1
+#define BW0_XL_bp       0
+
+// CTRL2_G
+#define ODR_G_bp    4
+#define FS_G_bp     2
+#define FS_125_bp   1
+
+// CTRL3_C
+#define BOOT_bp         7
+#define BDU_bp          6
+#define H_LACTIVE_bp    5
+#define PP_OD_bp        4
+#define SIM_bp          3
+#define IF_INC_bp       2
+#define BLE_bp          1
+#define SW_RESET_bp     0
+
+// CTRL4_C
+#define DEN_XL_EN_bp        7
+#define SLEEP_G_bp          6
+#define INT2_on_INT1_bp     5
+#define DEN_DRDY_INT1_bp    4
+#define DRDY_MASK_bp        3
+#define I2C_disable_bp      2
+#define LPF1_SEL_G_bp       1
+
+// CTRL5_C
+#define ROUNDING_bp     5
+#define DEN_LH_bp       4
+#define ST_G_bp         2
+#define ST_XL_bp        0
+
+// CTRL6_C
+#define TRIG_EN_bp      7
+#define LVL1_EN_bp      6
+#define LVL2_EN_bp      5
+#define XL_HM_MODE_bp   4
+#define USR_OFF_W_bp    3
+#define FTYPE_bp        0
+
+// CTRL7_G
+#define G_HM_MODE_bp    7
+#define HP_EN_G_bp      6
+#define HPM_G_bp        4
+#define ROUNDING_STATUS 2
+
+// CTRL8_XL
+#define LPF2_XL_EN_bp       7
+#define HPCF_XL_bp          5
+#define HP_REF_MODE_bp      4
+#define INPUT_COMPOSITE_bp  3
+#define HP_SLOPE_XL_EN_bp   2
+#define LOW_PASS_ON_6D      0
+
+// CTRL9_XL
+#define DEN_X_bp    7
+#define DEN_Y_bp    6
+#define DEN_Z_bp    5
+#define DEN_XL_G_bp 4
+#define SOFT_EN_bp  2
+
+// CTRL10_C
+#define WRIST_TILT_EN_bp    7
+#define TIMER_EN_bp         5
+#define PEDO_EN_bp          4
+#define TILT_EN_bp          3
+#define FUNC_EN_bp          2
+#define PEDO_RST_STEP_bp    1
+#define SIGN_MOTION_EN_bp   0
+
+// MASTER_CONFIG
+#define DRDY_ON_INT1_bp         7
+#define DATA_VALID_SEL_FIFO_bp  6
+#define START_CONFIG_bp         4
+#define PULL_UP_EN_bp           3
+#define PASS_THROUGH_MODE_bp    2
+#define IRON_EN_bp              1
+#define MASTER_ON_bp            0
+
+// WAKE_UP_SRC
+#define FF_IA_bp            5
+#define SLEEP_STATE_IA_bp   4
+#define WU_IA_bp            3
+#define X_WU_bp             2
+#define Y_WU_bp             1
+#define Z_WU_bp             0
+
+// TAP_SRC
+#define TAP_IA_bp       6
+#define SINGLE_TAP_bp   5
+#define DOUBLE_TAP_bp   4
+#define TAP_SIGN_bp     3
+#define X_TAP_bp        2
+#define Y_TAP_bp        1
+#define Z_TAP_bp        0
+
+// D6D_SRC
+#define DEN_DRDY_bp     7
+#define D6D_IA_bp       6
+#define ZH_bp           5
+#define ZL_bp           4
+#define YH_bp           3
+#define YL_bp           2
+#define XH_bp           1
+#define XL_bp           0
+
+// STATUS_REG
+#define TDA_bp  2
+#define GDA_bp  1
+#define XLDA_bp 0
+
 uint8_t whoAmI(LSM6DSMTR_t device) {
     uint8_t ret;
     uint8_t value;
