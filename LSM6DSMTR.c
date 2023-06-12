@@ -330,6 +330,9 @@
 #define Y_WU_bp             1
 #define Z_WU_bp             0
 
+// TAP_SRC
+
+
 uint8_t whoAmI(LSM6DSMTR_t device) {
     uint8_t ret;
     uint8_t value;
