@@ -339,6 +339,17 @@
 #define Y_TAP_bp        1
 #define Z_TAP_bp        0
 
+// D6D_SRC
+#define DEN_DRDY_bp     7
+#define D6D_IA_bp       6
+#define ZH_bp           5
+#define ZL_bp           4
+#define YH_bp           3
+#define YL_bp           2
+#define XH_bp           1
+#define XL_bp           0
+
+
 uint8_t whoAmI(LSM6DSMTR_t device) {
     uint8_t ret;
     uint8_t value;
