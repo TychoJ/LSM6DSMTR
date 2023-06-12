@@ -283,6 +283,12 @@
 #define USR_OFF_W_bp    3
 #define FTYPE_bp        0
 
+// CTRL7_G
+#define G_HM_MODE_bp    7
+#define HP_EN_G_bp      6
+#define HPM_G_bp        4
+#define ROUNDING_STATUS 2
+
 uint8_t whoAmI(LSM6DSMTR_t device) {
     uint8_t ret;
     uint8_t value;
