@@ -239,6 +239,12 @@
 #define INT2_DRDY_G_bp          1
 #define INT2_DRDY_XL            0
 
+// CTRL1_XL
+#define ODR_XL_bp       4
+#define FS_XL_bp        2
+#define LPF1_BW_SEL_bp  1
+#define BW0_XL_bp       0
+
 uint8_t whoAmI(LSM6DSMTR_t device) {
     uint8_t ret;
     uint8_t value;
