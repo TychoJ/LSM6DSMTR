@@ -250,6 +250,16 @@
 #define FS_G_bp     2
 #define FS_125_bp   1
 
+// CTRL3_C
+#define BOOT_bp         7
+#define BDU_bp          6
+#define H_LACTIVE_bp    5
+#define PP_OD_bp        4
+#define SIM_bp          3
+#define IF_INC_bp       2
+#define BLE_bp          1
+#define SW_RESET_bp     0
+
 uint8_t whoAmI(LSM6DSMTR_t device) {
     uint8_t ret;
     uint8_t value;
