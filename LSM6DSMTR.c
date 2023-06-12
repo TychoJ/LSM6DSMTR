@@ -331,7 +331,13 @@
 #define Z_WU_bp             0
 
 // TAP_SRC
-
+#define TAP_IA_bp       6
+#define SINGLE_TAP_bp   5
+#define DOUBLE_TAP_bp   4
+#define TAP_SIGN_bp     3
+#define X_TAP_bp        2
+#define Y_TAP_bp        1
+#define Z_TAP_bp        0
 
 uint8_t whoAmI(LSM6DSMTR_t device) {
     uint8_t ret;
