@@ -304,6 +304,15 @@
 #define DEN_XL_G_bp 4
 #define SOFT_EN_bp  2
 
+// CTRL10_C
+#define WRIST_TILT_EN_bp    7
+#define TIMER_EN_bp         5
+#define PEDO_EN_bp          4
+#define TILT_EN_bp          3
+#define FUNC_EN_bp          2
+#define PEDO_RST_STEP_bp    1
+#define SIGN_MOTION_EN_bp   0
+
 uint8_t whoAmI(LSM6DSMTR_t device) {
     uint8_t ret;
     uint8_t value;
