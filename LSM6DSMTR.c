@@ -275,6 +275,14 @@
 #define ST_G_bp         2
 #define ST_XL_bp        0
 
+// CTRL6_C
+#define TRIG_EN_bp      7
+#define LVL1_EN_bp      6
+#define LVL2_EN_bp      5
+#define XL_HM_MODE_bp   4
+#define USR_OFF_W_bp    3
+#define FTYPE_bp        0
+
 uint8_t whoAmI(LSM6DSMTR_t device) {
     uint8_t ret;
     uint8_t value;
