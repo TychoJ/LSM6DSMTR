@@ -269,6 +269,11 @@
 #define I2C_disable_bp      2
 #define LPF1_SEL_G_bp       1
 
+// CTRL5_C
+#define ROUNDING_bp     5
+#define DEN_LH_bp       4
+#define ST_G_bp         2
+#define ST_XL_bp        0
 
 uint8_t whoAmI(LSM6DSMTR_t device) {
     uint8_t ret;
