@@ -322,6 +322,14 @@
 #define IRON_EN_bp              1
 #define MASTER_ON_bp            0
 
+// WAKE_UP_SRC
+#define FF_IA_bp            5
+#define SLEEP_STATE_IA_bp   4
+#define WU_IA_bp            3
+#define X_WU_bp             2
+#define Y_WU_bp             1
+#define Z_WU_bp             0
+
 uint8_t whoAmI(LSM6DSMTR_t device) {
     uint8_t ret;
     uint8_t value;
