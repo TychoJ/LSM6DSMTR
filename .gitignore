@@ -1,6 +1,9 @@
 # .vscode directory
 **/.vscode/
 
+# test directory
+**/tmp/
+
 # Prerequisites
 *.d
 
