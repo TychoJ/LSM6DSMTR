@@ -354,6 +354,11 @@
 #define GDA_bp  1
 #define XLDA_bp 0
 
+
+/*
+ * Group control defines
+ */
+
 uint8_t whoAmI(LSM6DSMTR_t device) {
     uint8_t ret;
     uint8_t value;
