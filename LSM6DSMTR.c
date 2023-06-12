@@ -349,6 +349,10 @@
 #define XH_bp           1
 #define XL_bp           0
 
+// STATUS_REG
+#define TDA_bp  2
+#define GDA_bp  1
+#define XLDA_bp 0
 
 uint8_t whoAmI(LSM6DSMTR_t device) {
     uint8_t ret;
