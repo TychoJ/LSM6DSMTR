@@ -245,6 +245,11 @@
 #define LPF1_BW_SEL_bp  1
 #define BW0_XL_bp       0
 
+// CTRL2_G
+#define ODR_G_bp    4
+#define FS_G_bp     2
+#define FS_125_bp   1
+
 uint8_t whoAmI(LSM6DSMTR_t device) {
     uint8_t ret;
     uint8_t value;
