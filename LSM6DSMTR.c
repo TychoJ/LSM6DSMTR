@@ -359,6 +359,16 @@
  * Group control defines
  */
 
+// FIFO_CTRL3
+#define GYRO_NOT_IN_FIFO_gc             0x00
+#define GYRO_NO_DECIMATION_FIFO_gc      0x01
+#define GYRO_2X_DECIMATION_FIFO_gc      0x02
+#define GYRO_3X_DECIMATION_FIFO_gc      0x03
+#define GYRO_4X_DECIMATION_FIFO_gc      0x04
+#define GYRO_8X_DECIMATION_FIFO_gc      0x05
+#define GYRO_16X_DECIMATION_FIFO_gc     0x06
+#define GYRO_32X_DECIMATION_FIFO_gc     0x07
+
 uint8_t whoAmI(LSM6DSMTR_t device) {
     uint8_t ret;
     uint8_t value;
