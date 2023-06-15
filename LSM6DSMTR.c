@@ -419,6 +419,12 @@
 #define FIFO_BYPASS_UNTIL_TRIGGER_THEN_CONTINUES_gc 0x04
 #define FIFO_CONTINUES_WHEN_OVERFLOW_OVERWRITE_gc   0x06
 
+// CTRL5_C "ROUNDING"
+#define NO_ROUNDING_gc 0x00
+#define XL_ONLY_gc  0x01
+#define G_ONLY_gc   0x02
+#define XL_AND_G_gc 0x03
+
 uint8_t whoAmI(LSM6DSMTR_t device) {
     uint8_t ret;
     uint8_t value;
