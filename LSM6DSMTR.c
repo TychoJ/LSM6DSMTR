@@ -380,7 +380,7 @@
 #define XL_32X_DECIMATION_FIFO_gc       0x07
 
 // FIFO_CTRL4 "DEC_DS4_FIFO"
-#define DS4_NOT_IN_FIFO_gc
+#define DS4_NOT_IN_FIFO_gc              0x00
 #define DS4_NO_DECIMATION_FIFO_gc       0x01
 #define DS4_2X_DECIMATION_FIFO_gc       0x02
 #define DS4_3X_DECIMATION_FIFO_gc       0x03
@@ -388,6 +388,16 @@
 #define DS4_8X_DECIMATION_FIFO_gc       0x05
 #define DS4_16X_DECIMATION_FIFO_gc      0x06
 #define DS4_32X_DECIMATION_FIFO_gc      0x07
+
+// FIFO_CTRL4 "DEC_DS3_FIFO"
+#define DS3_NOT_IN_FIFO_gc              0x00
+#define DS3_NO_DECIMATION_FIFO_gc       0x01
+#define DS3_2X_DECIMATION_FIFO_gc       0x02
+#define DS3_3X_DECIMATION_FIFO_gc       0x03
+#define DS3_4X_DECIMATION_FIFO_gc       0x04
+#define DS3_8X_DECIMATION_FIFO_gc       0x05
+#define DS3_16X_DECIMATION_FIFO_gc      0x06
+#define DS3_32X_DECIMATION_FIFO_gc      0x07
 
 
 uint8_t whoAmI(LSM6DSMTR_t device) {
