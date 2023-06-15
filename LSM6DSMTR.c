@@ -420,10 +420,15 @@
 #define FIFO_CONTINUES_WHEN_OVERFLOW_OVERWRITE_gc   0x06
 
 // CTRL5_C "ROUNDING"
-#define NO_ROUNDING_gc 0x00
-#define XL_ONLY_gc  0x01
-#define G_ONLY_gc   0x02
-#define XL_AND_G_gc 0x03
+#define NO_ROUNDING_gc  0x00
+#define XL_ONLY_gc      0x01
+#define G_ONLY_gc       0x02
+#define XL_AND_G_gc     0x03
+
+// CTRL5_C "ST_G"
+#define G_SELF_TEST_NORMAL_gc           0x00
+#define G_POSITIVE_SIGN_SELF_TEST_gc    0x01
+#define G_NEGATIVE_SIGN_SELF_TEST_gc    0x03
 
 uint8_t whoAmI(LSM6DSMTR_t device) {
     uint8_t ret;
