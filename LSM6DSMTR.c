@@ -435,6 +435,12 @@
 #define XL_POSITIVE_SIGN_SELF_TEST_gc   0x01
 #define XL_NEGATIVE_SIGN_SELF_TEST_gc   0x02
 
+// CTRL6_C "Trigger mode"
+#define TRIGGER_MODE_EDGE_SENSITIVE_gc                  0x04
+#define TRIGGER_MODE_LEVEL_SENSITIVE_gc                 0x02
+#define TRIGGER_MODE_LEVEL_SENSITIVE_LATCHED_gc         0x03
+#define TRIGGER_MODE_LEVEL_SENSITIVE_FIFO_ENABLED_gc    0x06
+
 uint8_t whoAmI(LSM6DSMTR_t device) {
     uint8_t ret;
     uint8_t value;
