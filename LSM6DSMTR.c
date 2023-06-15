@@ -399,6 +399,18 @@
 #define DS3_16X_DECIMATION_FIFO_gc      0x06
 #define DS3_32X_DECIMATION_FIFO_gc      0x07
 
+// FIFO_CTRL5 "ODR_FIFO"
+#define FIFO_DISABLE_gc     0x00
+#define FIFO_ODR_12_5Hz_gc  0x01
+#define FIFO_ODR_26Hz_gc    0x02
+#define FIFO_ODR_52Hz_gc    0x03
+#define FIFO_ODR_104Hz_gc   0x04
+#define FIFO_ODR_208Hz_gc   0x05
+#define FIFO_ODR_416Hz_gc   0x06
+#define FIFO_ODR_833Hz_gc   0x07
+#define FIFO_ODR_1K66Hz_gc  0x08
+#define FIFO_ODR_3K33Hz_gc  0x09
+#define FIFO_ODR_6K66Hz_gc  0x0A
 
 uint8_t whoAmI(LSM6DSMTR_t device) {
     uint8_t ret;
