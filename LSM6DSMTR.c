@@ -412,6 +412,13 @@
 #define FIFO_ODR_3K33Hz_gc  0x09
 #define FIFO_ODR_6K66Hz_gc  0x0A
 
+// FIFO_CTRL5 "FIFO_MODE"
+#define FIFO_DISABLED_gc                            0x00
+#define FIFO_STOP_WHEN_OVERFLOWING_gc               0x01
+#define FIFO_CONTINUES_UNTIL_TRIGGER_THEN_FIFO_gc   0x03
+#define FIFO_BYPASS_UNTIL_TRIGGER_THEN_CONTINUES_gc 0x04
+#define FIFO_CONTINUES_WHEN_OVERFLOW_OVERWRITE_gc   0x06
+
 uint8_t whoAmI(LSM6DSMTR_t device) {
     uint8_t ret;
     uint8_t value;
