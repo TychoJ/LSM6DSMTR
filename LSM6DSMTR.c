@@ -442,10 +442,27 @@
 #define TRIGGER_MODE_LEVEL_SENSITIVE_FIFO_ENABLED_gc    0x06
 
 // CTRL6_C "FILTER_TYPES"
-#define G_FILTER_TYPE_0_gc 0x00
-#define G_FILTER_TYPE_1_gc 0x01
-#define G_FILTER_TYPE_2_gc 0x02
-#define G_FILTER_TYPE_3_gc 0x03
+#define G_FILTER_TYPE_0_gc              0x00
+#define G_FILTER_TYPE_1_gc              0x01
+#define G_FILTER_TYPE_2_gc              0x02
+#define G_FILTER_TYPE_3_gc              0x03
+
+// CTRL1_OIS "DEN MODE"
+#define DEN_TRIGGER_MODE_gc             0x02
+#define DEN_LATCHED_MODE_gc             0x03
+
+// CTRL2_OIS "G OIS CHAIN BANDWIDTH"
+#define G_BANDWIDTH_TYPE_0_gc           0x00
+#define G_BANDWIDTH_TYPE_1_gc           0x01
+#define G_BANDWIDTH_TYPE_2_gc           0x02
+#define G_BANDWIDTH_TYPE_3_gc           0x03
+
+// CTRL3_OIS "XL OIS CHANNEL BANDWIDTH"
+#define XL_BANDWIDTH_TYPE_0_gc          0x00
+#define XL_BANDWIDTH_TYPE_1_gc          0x01
+#define XL_BANDWIDTH_TYPE_2_gc          0x02
+#define XL_BANDWIDTH_TYPE_3_gc          0x03
+
 
 uint8_t whoAmI(LSM6DSMTR_t device) {
     uint8_t ret;
