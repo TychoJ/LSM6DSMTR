@@ -531,6 +531,58 @@
 #define MSK_BW0_XL                      0b00000001
 
 // CTRL2_G MASK
+#define MSK_ODR_G                       0b11110000
+#define MSK_FS_G                        0b00001100
+#define MSK_FS_125                      0b00000010
+
+// CTRL3_C MASK
+#define MSK_BOOT                        0b10000000
+#define MSK_BDU                         0b01000000
+#define MSK_H_LACTIVE                   0b00100000
+#define MSK_PP_OD                       0b00010000
+#define MSK_SIM                         0b00001000
+#define MSK_IF_INC                      0b00000100
+#define MSK_BLE                         0b00000010
+#define MSK_SW_RESET                    0b00000001
+
+// CTRL4_C MASK
+#define MSK_DEN_XL_EN                   0b10000000
+#define MSK_SLEEP                       0b01000000
+#define MSK_INT2_on_INT1                0b00100000
+#define MSK_DEN_DRDY_INT1               0b00010000
+#define MSK_DRDY_MASK                   0b00001000
+#define MSK_I2C_disable                 0b00000100
+#define MSK_LPF1_SEL_G                  0b00000010
+
+// CTRL5_C MASK
+#define MSK_ROUNDING                    0b11100000
+#define MSK_DEN_LH                      0b00010000
+#define MSK_ST_G                        0b00001100
+#define MSK_ST_XL                       0b00000011
+
+// CTRL6_C MASK
+#define MSK_TRIG_EN                     0b10000000
+#define MSK_LVL1_EN                     0b01000000
+#define MSK_LVL2_EN                     0b00100000
+#define MSK_XL_HM_MODE                  0b00010000
+#define MSK_USR_OFF_W                   0b00001000
+#define MSK_FTYPE                       0b00000011
+
+// CTRL7_G MASK
+#define MSK_G_HM_MODE                   0b10000000
+#define MSK_HP_EN_G                     0b01000000
+#define MSK_HPM_G                       0b00110000
+#define MSK_ROUNDING_STATUS             0b00000100
+
+// CTRL8_XL MASK
+#define MSK_LPF2_XL_EN                  0b10000000
+#define MSK_HPCF_XL                     0b01100000
+#define MSK_HP_REF_MODE                 0b00010000
+#define MSK_INPUT_COMPOSITE             0b00001000
+#define MSK_HP_SLOPE_XL_EN              0b00000100
+#define MSK_LOW_PASS_ON_6D              0b00000001
+
+// CTRL9_XL MASK
 
 
 uint8_t whoAmI(LSM6DSMTR_t device) {
