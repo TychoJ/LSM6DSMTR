@@ -442,10 +442,171 @@
 #define TRIGGER_MODE_LEVEL_SENSITIVE_FIFO_ENABLED_gc    0x06
 
 // CTRL6_C "FILTER_TYPES"
-#define G_FILTER_TYPE_0_gc 0x00
-#define G_FILTER_TYPE_1_gc 0x01
-#define G_FILTER_TYPE_2_gc 0x02
-#define G_FILTER_TYPE_3_gc 0x03
+#define G_FILTER_TYPE_0_gc              0x00
+#define G_FILTER_TYPE_1_gc              0x01
+#define G_FILTER_TYPE_2_gc              0x02
+#define G_FILTER_TYPE_3_gc              0x03
+
+// CTRL1_OIS "DEN MODE"
+#define DEN_TRIGGER_MODE_gc             0x02
+#define DEN_LATCHED_MODE_gc             0x03
+
+// CTRL2_OIS "G OIS CHAIN BANDWIDTH"
+#define G_BANDWIDTH_TYPE_0_gc           0x00
+#define G_BANDWIDTH_TYPE_1_gc           0x01
+#define G_BANDWIDTH_TYPE_2_gc           0x02
+#define G_BANDWIDTH_TYPE_3_gc           0x03
+
+// CTRL3_OIS "XL OIS CHANNEL BANDWIDTH"
+#define XL_BANDWIDTH_TYPE_0_gc          0x00
+#define XL_BANDWIDTH_TYPE_1_gc          0x01
+#define XL_BANDWIDTH_TYPE_2_gc          0x02
+#define XL_BANDWIDTH_TYPE_3_gc          0x03
+
+/*
+*   BIT MASKS
+*/ 
+
+// FUNC_CFG_ACCESS MASK
+#define MSK_FUNC_CFG_EN                 0b10000000
+#define MSK_FUNC_CFG_EN_B               0b00100000
+
+// SENSOR_SYNC_TIME_FRAME MASK
+#define MSK_SENSOR_SYNC_TIME_FRAME      0b00001111
+
+// SENSOR_SYNC_RES_RATIO MASK
+#define MSK_SENSOR_SYNC_RES_RATIO       0b00000011
+
+// FIFO_CTRL1 MASK
+#define MSK_FIFO_CTRL1_FTH              0b11111111
+
+// FIFO_CTRL2 MASK
+#define MSK_TIMER_PEDO_FIFO_EN          0b10000000
+#define MSK_TIMER_PEDO_FIFO_DRDY        0b01000000
+#define MSK_FIFO_TEMP_EN                0b00001000
+#define MSK_FIFO_CTRL2_FTH              0b00000111
+
+// FIFO_CTRL3 MASK
+#define MSK_DEC_FIFO_GYRO               0b00111000
+#define MSK_DEC_FIFO_XL                 0b00000111
+
+// FIFO_CTRL4 MASK
+#define MSK_STOP_ON_FTH                 0b10000000
+#define MSK_ONLY_HIGH_DATA              0b01000000
+#define MSK_DEC_DS4_FIFO                0b00111000
+#define MSK_DEC_DS3_FIFO                0b00000111
+
+// FIFO_CTRL5 MASK
+#define MSK_ODR_FIFO                    0b01111000
+#define MSK_FIFO_MODE                   0b00000111
+
+// DRDY_PULSE_CFG MASK
+#define MSK_DRDY_PULSE_CFG              0b10000000
+#define MSK_INT2_WRIST_TILT             0b00000001
+
+// INT1_CTRL MASK
+#define MSK_INT1_STEP_DETECTOR          0b10000000
+#define MSK_INT1_SIGN_MOT               0b01000000
+#define MSK_INT1_FULL_FLAG              0b00100000
+#define MSK_INT1_FIFO_OVR               0b00010000
+#define MSK_INT1_FTH                    0b00001000
+#define MSK_INT1_BOOT                   0b00000100
+#define INT1_DRDY_G                     0b00000010
+#define INT1_DRDY_XL                    0b00000001
+
+// INT2_CTRL MASK
+#define MSK_INT2_STEP_DELTA             0b10000000
+#define MSK_INT2_STEP_COUNT_OV          0b01000000
+#define MSK_INT2_FULL_FLAG              0b00100000
+#define MSK_INT2_FIFO_OVR               0b00010000
+#define MSK_INT2_FTH                    0b00001000
+#define MSK_INT2_DRDY_TEMP              0b00000100
+#define MSK_INT2_DRDY_G                 0b00000010
+#define MSK_INT2_DRDY_XL                0b00000001
+
+// CTRL1_XL MASK
+#define MSK_ODR_XL                      0b11110000
+#define MSK_FS_XL                       0b00001100
+#define MSK_LPF1_BW_SEL                 0b00000010
+#define MSK_BW0_XL                      0b00000001
+
+// CTRL2_G MASK
+#define MSK_ODR_G                       0b11110000
+#define MSK_FS_G                        0b00001100
+#define MSK_FS_125                      0b00000010
+
+// CTRL3_C MASK
+#define MSK_BOOT                        0b10000000
+#define MSK_BDU                         0b01000000
+#define MSK_H_LACTIVE                   0b00100000
+#define MSK_PP_OD                       0b00010000
+#define MSK_SIM                         0b00001000
+#define MSK_IF_INC                      0b00000100
+#define MSK_BLE                         0b00000010
+#define MSK_SW_RESET                    0b00000001
+
+// CTRL4_C MASK
+#define MSK_DEN_XL_EN                   0b10000000
+#define MSK_SLEEP                       0b01000000
+#define MSK_INT2_on_INT1                0b00100000
+#define MSK_DEN_DRDY_INT1               0b00010000
+#define MSK_DRDY_MASK                   0b00001000
+#define MSK_I2C_disable                 0b00000100
+#define MSK_LPF1_SEL_G                  0b00000010
+
+// CTRL5_C MASK
+#define MSK_ROUNDING                    0b11100000
+#define MSK_DEN_LH                      0b00010000
+#define MSK_ST_G                        0b00001100
+#define MSK_ST_XL                       0b00000011
+
+// CTRL6_C MASK
+#define MSK_TRIG_EN                     0b10000000
+#define MSK_LVL1_EN                     0b01000000
+#define MSK_LVL2_EN                     0b00100000
+#define MSK_XL_HM_MODE                  0b00010000
+#define MSK_USR_OFF_W                   0b00001000
+#define MSK_FTYPE                       0b00000011
+
+// CTRL7_G MASK
+#define MSK_G_HM_MODE                   0b10000000
+#define MSK_HP_EN_G                     0b01000000
+#define MSK_HPM_G                       0b00110000
+#define MSK_ROUNDING_STATUS             0b00000100
+
+// CTRL8_XL MASK
+#define MSK_LPF2_XL_EN                  0b10000000
+#define MSK_HPCF_XL                     0b01100000
+#define MSK_HP_REF_MODE                 0b00010000
+#define MSK_INPUT_COMPOSITE             0b00001000
+#define MSK_HP_SLOPE_XL_EN              0b00000100
+#define MSK_LOW_PASS_ON_6D              0b00000001
+
+// CTRL9_XL MASK
+#define MSK_DEN_X                       0b10000000
+#define MSK_DEN_Y                       0b01000000
+#define MSK_DEN_Z                       0b00100000
+#define MSK_DEN_XL_G                    0b00010000
+#define MSK_SOFT_EN                     0b00000100
+
+// CTRL10_C MASK
+#define MSK_WRIST_TILT_EN               0b10000000
+#define MSK_TIMER_EN                    0b00100000
+#define MSK_PEDO_EN                     0b00010000
+#define MSK_TILT_EN                     0b00001000
+#define MSK_FUNC_EN                     0b00000100
+#define MSK_PEDO_RST_STEP               0b00000010
+#define MSK_SIGN_MOTION_EN              0b00000001
+
+// MASTER_CONFIG MASK
+#define MSK_DRDY_ON_INT1                0b10000000
+#define MSK_DATA_VALID_SEL_FIFO         0b01000000
+#define MSK_START_CONFIG                0b00010000
+#define MSK_PULL_UP_EN                  0b00001000
+#define MSK_PASS_THROUGH_MODE           0b00000100
+#define MSK_IRON_EN                     0b00000010
+#define MSK_MASTER_ON                   0b00000001
+
 
 uint8_t whoAmI(LSM6DSMTR_t device) {
     uint8_t ret;
