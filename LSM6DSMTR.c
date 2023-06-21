@@ -607,39 +607,6 @@
 #define MSK_IRON_EN                     0b00000010
 #define MSK_MASTER_ON                   0b00000001
 
-// OUTPUT, NOT NEEDED???
-// // WAKE_UP_SRC MASK
-// #define MSK_FF_IA                       0b00100000
-// #define MSK_SLEEP_STATE_IA              0b00010000
-// #define MSK_WU_IA                       0b00001000
-// #define MSK_X_WU                        0b00000100
-// #define MSK_Y_WU                        0b00000010
-// #define MSK_Z_WU                        0b00000001
-
-// // TAP_SRC MASK
-// #define MSK_TAP_IA                      0b01000000
-// #define MSK_SINGLE_TAP                  0b00100000
-// #define MSK_DOUBLE_TAP                  0b00010000
-// #define MSK_TAP_SIGN                    0b00001000
-// #define MSK_X_TAP                       0b00000100
-// #define MSK_Y_TAP                       0b00000010
-// #define MSK_Z_TAP                       0b00000001
-
-// // D6D_SRC MASK
-// #define MSK_DEN_DRDY                    0b10000000
-// #define MSK_D6D_IA                      0b01000000
-// #define MSK_ZH                          0b00100000
-// #define MSK_ZL                          0b00010000
-// #define MSK_YH                          0b00001000
-// #define MSK_YL                          0b00000100
-// #define MSK_XH                          0b00000010
-// #define MSK_XL                          0b00000001
-
-// // STATUS_REG MASK
-// #define MSK_TDA                         0b00000100
-// #define MSK_GDA                         0b00000010
-// #define MSK_XLDA                        0b00000001
-
 
 uint8_t whoAmI(LSM6DSMTR_t device) {
     uint8_t ret;
