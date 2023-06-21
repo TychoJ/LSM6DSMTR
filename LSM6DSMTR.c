@@ -583,6 +583,61 @@
 #define MSK_LOW_PASS_ON_6D              0b00000001
 
 // CTRL9_XL MASK
+#define MSK_DEN_X                       0b10000000
+#define MSK_DEN_Y                       0b01000000
+#define MSK_DEN_Z                       0b00100000
+#define MSK_DEN_XL_G                    0b00010000
+#define MSK_SOFT_EN                     0b00000100
+
+// CTRL10_C MASK
+#define MSK_WRIST_TILT_EN               0b10000000
+#define MSK_TIMER_EN                    0b00100000
+#define MSK_PEDO_EN                     0b00010000
+#define MSK_TILT_EN                     0b00001000
+#define MSK_FUNC_EN                     0b00000100
+#define MSK_PEDO_RST_STEP               0b00000010
+#define MSK_SIGN_MOTION_EN              0b00000001
+
+// MASTER_CONFIG MASK
+#define MSK_DRDY_ON_INT1                0b10000000
+#define MSK_DATA_VALID_SEL_FIFO         0b01000000
+#define MSK_START_CONFIG                0b00010000
+#define MSK_PULL_UP_EN                  0b00001000
+#define MSK_PASS_THROUGH_MODE           0b00000100
+#define MSK_IRON_EN                     0b00000010
+#define MSK_MASTER_ON                   0b00000001
+
+// WAKE_UP_SRC MASK
+#define MSK_FF_IA                       0b00100000
+#define MSK_SLEEP_STATE_IA              0b00010000
+#define MSK_WU_IA                       0b00001000
+#define MSK_X_WU                        0b00000100
+#define MSK_Y_WU                        0b00000010
+#define MSK_Z_WU                        0b00000001
+
+// TAP_SRC MASK
+#define MSK_TAP_IA                      0b01000000
+#define MSK_SINGLE_TAP                  0b00100000
+#define MSK_DOUBLE_TAP                  0b00010000
+#define MSK_TAP_SIGN                    0b00001000
+#define MSK_X_TAP                       0b00000100
+#define MSK_Y_TAP                       0b00000010
+#define MSK_Z_TAP                       0b00000001
+
+// D6D_SRC MASK
+#define MSK_DEN_DRDY                    0b10000000
+#define MSK_D6D_IA                      0b01000000
+#define MSK_ZH                          0b00100000
+#define MSK_ZL                          0b00010000
+#define MSK_YH                          0b00001000
+#define MSK_YL                          0b00000100
+#define MSK_XH                          0b00000010
+#define MSK_XL                          0b00000001
+
+// STATUS_REG MASK
+#define MSK_TDA                         0b00000100
+#define MSK_GDA                         0b00000010
+#define MSK_XLDA                        0b00000001
 
 
 uint8_t whoAmI(LSM6DSMTR_t device) {
