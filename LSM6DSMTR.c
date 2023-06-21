@@ -510,14 +510,14 @@
 #define MSK_INT1_FULL_FLAG              0b00100000
 #define MSK_INT1_FIFO_OVR               0b00010000
 #define MSK_INT1_FTH                    0b00001000
-#define MSK_INT1_ BOOT                  0b00000100
+#define MSK_INT1_BOOT                  0b00000100
 #define INT1_DRDY_G                     0b00000010
 #define INT1_DRDY_XL                    0b00000001
 
 // INT2_CTRL MASK
 #define MSK_INT2_STEP_DELTA             0b10000000
 #define MSK_INT2_STEP_COUNT_OV          0b01000000
-#define MSK_INT2_ FULL_FLAG             0b00100000
+#define MSK_INT2_FULL_FLAG             0b00100000
 #define MSK_INT2_FIFO_OVR               0b00010000
 #define MSK_INT2_FTH                    0b00001000
 #define MSK_INT2_DRDY_TEMP              0b00000100
